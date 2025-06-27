@@ -81,7 +81,7 @@ export default function SelfReferralNotice() {
           />
           <div>
             <span className="text-lg sm:text-lg font-extrabold md:text-3xl lg:text-4xl xl:text-5xl whitespace-nowrap">
-              매일 317명이 셀퍼럴을 받고 있어요
+              매일 517명이 셀퍼럴을 받고 있어요
             </span>
             <UserTotalCounter />           
           </div>
