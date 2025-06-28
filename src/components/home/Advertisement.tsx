@@ -112,14 +112,14 @@ export default function AboutCompanySection() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h2 className="text-4xl sm:text-5xl md:text-5xl font-extrabold text-blue-800 drop-shadow-md">
+                  <h2 className="text-[45px] sm:text-5xl md:text-5xl font-extrabold text-blue-800 drop-shadow-md">
                     Hedgehood
                   </h2>
                 </div>
               </div>
 
               {/* Description */}
-              <p className="text-xl sm:text-xl md:text-xl text-center text-gray-800 mb-1 font-semibold leading-relaxed">
+              <p className="text-[22px] sm:text-xl md:text-xl text-center text-gray-800 mb-1 font-semibold leading-relaxed">
                  <span className="block sm:inline">단 하나! </span>{" "}
                 <span className="block sm:inline whitespace-nowrap">
                   <span className="text-blue-600 font-extrabold underline decoration-wavy underline-offset-4">
@@ -144,7 +144,7 @@ export default function AboutCompanySection() {
             <div className="flex flex-col sm:flex-row justify-between items-stretch w-full gap-0 mt-[-8px]">
               {/* 왼쪽 섹션 */}
               <section className="flex-1 p-4 ">
-                <ul className="c space-y-3 text-sm sm:text-base md:text-lg text-gray-800 font-medium py-4 rounded-2xl relative z-10">
+                <ul className="c space-y-3 text-xl sm:text-base md:text-lg text-gray-800 font-medium py-4 rounded-2xl relative z-10">
                   <li>
                     ✅ <strong>평균 스프레드 :</strong>{" "}
                     <span className="text-indigo-600 font-semibold">
@@ -184,12 +184,12 @@ export default function AboutCompanySection() {
                 whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => router.push("/exchangeInquiry")}
-                className="bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white text-base sm:text-[30px] md:text-[30px] font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-2xl shadow-xl transition-all cursor-pointer"
+                className="bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white text-[25px] sm:text-[30px] md:text-[30px] font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-2xl shadow-xl transition-all cursor-pointer"
               >
                 {/* className="bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white text-base sm:text-lg md:text-xl font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-2xl shadow-xl transition-all cursor-pointer"> */}
                 지금 90% 셀퍼럴 받기
               </motion.button>
-              <ul className="text-[15px] sm:text-[25px] mt-3 text-blue-700 font-semibold">
+              <ul className="text-[20px] sm:text-[25px] mt-3 text-blue-700 font-semibold">
                 {/* <p className="text-[30px] sm:text-sm mt-3 text-blue-700 font-semibold"> */}
                 단 1분만에 신청 가능
               </ul>
