@@ -99,53 +99,52 @@ export default function AboutCompanySection() {
             className={`flex-1 relative bg-gradient-to-br from-white via-blue-50 to-blue-100 border-2 border-blue-300 p-6 rounded-3xl shadow-[0_0_60px_rgba(0,100,255,0.15)] transition-all duration-700 transform`}
           >
             {/* 1 라인 */}
-            <div className="flex flex-col sm:flex-row justify-between items-start w-full gap-0 mb-0">
-              {/* 왼쪽 섹션 */}
-              {/* <section className="flex-1 p-4 bg-blue-300 rounded-xl"> */}
-              <section className="flex-1 p-4">
-                {/* Headline */}
-                <div className="flex justify-center">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-full shadow-[0_4px_16px_rgba(0,0,0,0.5)] overflow-hidden">
-                      <img
-                        src="/images/hed.png"
-                        alt="샘플 이미지"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-blue-800 drop-shadow-md">
-                      Hedgehood
-                    </h2>
+            <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-start w-full gap-0 mb-0">
+            {/* 왼쪽 섹션 */}
+            <section className="flex-1 p-4 w-full sm:w-auto">
+              {/* Headline */}
+              <div className="flex justify-center sm:justify-center">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-full shadow-[0_4px_16px_rgba(0,0,0,0.5)] overflow-hidden">
+                    <img
+                      src="/images/hed.png"
+                      alt="샘플 이미지"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
+                  <h2 className="text-4xl sm:text-5xl md:text-5xl font-extrabold text-blue-800 drop-shadow-md">
+                    Hedgehood
+                  </h2>
                 </div>
+              </div>
 
-                {/* Description */}
-                <p className="text-base sm:text-lg md:text-xl text-center text-gray-800 mb-6 font-semibold leading-relaxed">
-                  <span className="block sm:inline">단 하나! </span>{" "}
-                  <span className="block sm:inline whitespace-nowrap">
-                    <span className="text-blue-600 font-extrabold underline decoration-wavy underline-offset-4">
-                      셀퍼럴 수수료 환급
-                    </span>{" "}
-                    가능한 거래소
-                  </span>
-                </p>
-              </section>
+              {/* Description */}
+              <p className="text-xl sm:text-xl md:text-xl text-center text-gray-800 mb-1 font-semibold leading-relaxed">
+                 <span className="block sm:inline">단 하나! </span>{" "}
+                <span className="block sm:inline whitespace-nowrap">
+                  <span className="text-blue-600 font-extrabold underline decoration-wavy underline-offset-4">
+                    셀퍼럴 수수료 환급
+                  </span>{" "}
+                  가능한 거래소
+                </span>
+              </p>
+            </section>
 
-              {/* 오른쪽 섹션 */}
-              <section className="w-full sm:w-[140px] flex justify-center sm:justify-start items-start">
-                <img
-                  src="/images/1topp.png"
-                  alt="샘플 이미지"
-                  className="block w-[120px] h-auto max-w-none mx-0"
-                />
-              </section>
-            </div>
+            {/* 오른쪽 섹션 */}
+            <section className="w-auto flex justify-center sm:justify-start items-center mt-4 sm:mt-0">
+              <img
+                src="/images/1topp.png"
+                alt="샘플 이미지"
+                className="w-[120px] h-auto"
+              />
+            </section>
+          </div>
 
             {/* 2 라인 */}
             <div className="flex flex-col sm:flex-row justify-between items-stretch w-full gap-0 mt-[-8px]">
               {/* 왼쪽 섹션 */}
               <section className="flex-1 p-4 ">
-                <ul className="pl-[6%] pr-[0%] space-y-3 text-sm sm:text-base md:text-lg text-gray-800 font-medium py-4 rounded-2xl relative z-10">
+                <ul className="c space-y-3 text-sm sm:text-base md:text-lg text-gray-800 font-medium py-4 rounded-2xl relative z-10">
                   <li>
                     ✅ <strong>평균 스프레드 :</strong>{" "}
                     <span className="text-indigo-600 font-semibold">
