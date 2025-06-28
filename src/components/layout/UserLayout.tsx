@@ -28,7 +28,7 @@ export default function UserLayout({
           <div className="space-y-1 leading-relaxed">
             <p>사업자번호 : 183-36-01415</p>
             <p>
-              소재지 : 398, Seocho-daero, Seocho-gu, Seoul, Republic of Korea
+              소재지 : 4th Floor, 398, Seocho-daero, Seocho-gu, Seoul, Republic of Korea
             </p>
             <p>고객 센터 : 채팅 상담 (09:00 ~ 24:00)</p>
             <p>

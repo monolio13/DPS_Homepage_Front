@@ -59,7 +59,7 @@ export default function TestimonialChat() {
                 "셀퍼럴 수수료를 받는 순간 감동"
               </span>
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-800 font-bold">
-                저의 거래 수수료가 이렇게 많은줄 몰랐어요. 받은 수수료가 출금도
+                제 거래 수수료가 이렇게 많은줄 몰랐어요. 받은 수수료가 출금도
                 되니 <br className="hidden sm:block" /> 너무 감동이더라구요.
               </p>
               <div className="absolute bottom-1 right-5 text-xs sm:text-sm text-gray-600 font-semibold">

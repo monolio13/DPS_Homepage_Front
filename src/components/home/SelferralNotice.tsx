@@ -17,6 +17,23 @@ function getDailyRandom(min: number, max: number): number {
 }
 
 
+export function UserDayCounter() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+
+    const peoplePerDay = getDailyRandom(1, 400);
+
+    setCount(peoplePerDay);
+  }, []);
+
+  return (
+    <span className="text-lg sm:text-lg font-extrabold md:text-3xl lg:text-4xl xl:text-5xl whitespace-nowrap">
+      매일 {count.toLocaleString()}명이 셀퍼럴을 받고 있어요
+    </span>
+  );
+}
+
 export function UserTotalCounter() {
   const [count, setCount] = useState(0);
 
@@ -28,8 +45,9 @@ export function UserTotalCounter() {
     const daysPassed = Math.floor((today - baseDate) / msPerDay);
 
     const peoplePerDay = getDailyRandom(1, 400);
-    const baseCount = 100000;
-    const total = baseCount + daysPassed * peoplePerDay;
+    const baseCount = 230418;
+    //const total = baseCount + daysPassed * peoplePerDay;
+    const total = baseCount + peoplePerDay;
 
     setCount(total);
   }, []);
@@ -80,9 +98,10 @@ export default function SelfReferralNotice() {
             className="w-[120px] sm:w-[180px] md:w-[300px] h-auto drop-shadow-md"
           />
           <div>
-            <span className="text-lg sm:text-lg font-extrabold md:text-3xl lg:text-4xl xl:text-5xl whitespace-nowrap">
+            <UserDayCounter />
+            {/* <span className="text-lg sm:text-lg font-extrabold md:text-3xl lg:text-4xl xl:text-5xl whitespace-nowrap">
               매일 517명이 셀퍼럴을 받고 있어요
-            </span>
+            </span> */}
             <UserTotalCounter />           
           </div>
 
