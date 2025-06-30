@@ -60,11 +60,11 @@ export default function Intro() {
           textVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}>
         {/* <p className="text-[#157CFF] text-xl  font-bold tracking-wide uppercase mb-2"> */}
-        <p className="text-lg sm:text-xl md:text-2xl font-extrabold text-[#157CFF] mb-2 mt-10">
+        <p className="text-xl sm:text-3xl font-extrabold text-[#157CFF] mb-2 mt-10">
           셀퍼럴 = 매일 쌓이는 혜택
         </p>
         {/* <h1 className="text-1xl sm:text-2xl md:text-5xl font-extrabold text-[#4d4e59] leading-tight transition-all duration-1000 ease-out transform "> */}
-        <h1 className="whitespace-nowrap text-1xl sm:text-2xl md:text-5xl font-extrabold text-[#4d4e59] leading-tight transition-all duration-1000 ease-out transform">
+        <h1 className="whitespace-nowrap text-2xl sm:text-5xl md:text-5xl font-extrabold text-[#4d4e59] leading-tight transition-all duration-1000 ease-out transform">
           <span className="block sm:inline">
             당신의 거래를 성공으로 이끄는
           </span>{" "}
@@ -102,7 +102,7 @@ export default function Intro() {
               <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-2 drop-shadow-md">
                 {card.title}
               </h2>
-              <p className="text-2xl sm:text-2xl text-gray-200 drop-shadow-sm font-extrabold">
+              <p className="text-[15px] sm:text-2xl md:text-3xl text-gray-200 drop-shadow-sm font-extrabold">
                 {card.description}
               </p>
             </div>

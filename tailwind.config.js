@@ -16,7 +16,7 @@ module.exports = {
       md: "768px",
       lg: "1024px",
       xl: "1280px",
-      "custom-200": "200px", // ✅ 사용자 정의 브레이크포인트 추가
+      "custom-400": "400px", // ✅ 사용자 정의 브레이크포인트 추가
     },
   },
   plugins: [],

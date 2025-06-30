@@ -28,7 +28,7 @@ export function UserDayCounter() {
   }, []);
 
   return (
-    <span className="text-lg sm:text-lg font-extrabold md:text-3xl lg:text-4xl xl:text-5xl whitespace-nowrap">
+    <span className="text-[22px] sm:text-[45px] whitespace-nowrap">
       매일 {count.toLocaleString()}명이 셀퍼럴을 받고 있어요
     </span>
   );
@@ -42,10 +42,11 @@ export function UserTotalCounter() {
     const today = new Date().getTime(); // ← 숫자로 변환
 
     const msPerDay = 1000 * 60 * 60 * 24;
-    const daysPassed = Math.floor((today - baseDate) / msPerDay);
+    // const daysPassed = Math.floor((today - baseDate) / msPerDay);
+    const daysPassed = Math.floor((today) / msPerDay);
 
     const peoplePerDay = getDailyRandom(1, 400);
-    const baseCount = 230418;
+    const baseCount = 210418 + daysPassed;
     //const total = baseCount + daysPassed * peoplePerDay;
     const total = baseCount + peoplePerDay;
 
@@ -53,7 +54,7 @@ export function UserTotalCounter() {
   }, []);
 
   return (
-    <span className="text-lg sm:text-lg font-extrabold md:text-3xl lg:text-4xl xl:text-5xl whitespace-nowrap">
+    <span className="text-[22px] sm:text-[45px] whitespace-nowrap">
       누적 {count.toLocaleString()}명
     </span>
   );
@@ -115,14 +116,19 @@ export default function SelfReferralNotice() {
         {/* Speech Bubble with Serena Image on Top */}
         <div className="relative w-full max-w-[1000px]">
           <div className="relative bg-white rounded-[2.5rem] shadow-2xl px-6 sm:px-12 py-14 text-center z-10 border border-blue-100">
-            <p className="text-2sm sm:text-xl md:text-3xl font-extrabold text-purple-600 leading-snug mb-4">
+            <p className="text-[18px] sm:text-[35px] font-extrabold text-purple-600 leading-snug mb-4">
               아직도 추천인에게 주시나요?
             </p>
-            <p className="text-2sm sm:text-xl md:text-3xl font-extrabold text-purple-700 leading-snug mb-4">
+            <p className="text-[18px] sm:text-[35px] font-extrabold text-purple-700 leading-snug mb-4">
               수수료 90% 계속 뺏기고 있어요.
             </p>
-            <p className="text-2sm sm:text-xl md:text-3xl font-extrabold text-indigo-800 leading-snug">
-              지금 신청하고, 거래 수수료는 직접 챙기세요!
+            <p className="text-[18px] sm:text-[35px] font-extrabold text-indigo-800 leading-snug">
+              <span className="block sm:inline">
+                지금 신청하고, 
+                </span>{" "}
+                <span className="block sm:inline">
+                  거래 수수료는 직접 챙기세요!
+                  </span>
             </p>
 
             {/* Serena Image Overlapping the Text Box */}

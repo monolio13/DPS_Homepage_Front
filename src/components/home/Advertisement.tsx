@@ -52,34 +52,51 @@ export default function AboutCompanySection() {
             //     ? "translate-x-0 opacity-100"
             //     : "-translate-x-10 opacity-0"
             // }`}
-            className={`flex-1 bg-gradient-to-br from-white via-pink-50 to-rose-100 border border-rose-200 p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-700 transform ${
+            className={`flex-1 bg-gradient-to-br from-white via-pink-50 to-rose-100 border border-rose-200 p-5 sm:p-7 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-700 transform ${
               isVisible
                 ? "translate-x-0 opacity-100"
                 : "-translate-x-10 opacity-0"
             }`}
           >
             {/* Header */}
-            <div className="flex items-center gap-4 mb-6">
-              <img src="/images/girl.png" alt="icon" className="w-14 h-14" />
-              <h2 className="text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 drop-shadow-sm">
+            <div className="flex items-center gap-4 mb-6 ml-4">
+              <img src="/images/mslogo_circle.png" alt="icon" className="w-12 h-12 rounded-full shadow-[0_4px_16px_rgba(0,0,0,0.5)]" />
+              <h2 className="text-[35px] sm:text-4xl font-extrabold bg-clip-text text-blue-600 drop-shadow-sm">
                 메타 셀퍼럴
               </h2>
             </div>
 
             {/* Benefit List */}
-            <ul className="space-y-4 text-gray-800 text-xs sm:text-xl font-medium bg-white/60 p-5 rounded-2xl shadow-inner backdrop-blur-sm">
+            <ul className="space-y-4 text-gray-800 text-xl sm:text-xl font-medium bg-white/60 p-5 rounded-2xl shadow-inner backdrop-blur-sm">
               <li>
-                🔥 <strong>최대 요율 제공 :</strong> 업계 최고 수준 셀퍼럴 보상
+                {/* <strong>최대 요율 제공 :</strong> 업계 최고 수준 셀퍼럴 보상 */}
+                <span className="inline"><strong>최대 요율 제공 :</strong></span>{" "}
+                  <span className="inline whitespace-nowrap">
+                    업계 최고 수준 셀퍼럴 보상
+                  </span>
               </li>
               <li>
-                🏆 <strong>추천 시스템 :</strong> 분기별 파워거래소 랭킹 반영
+                {/* <strong>추천 시스템 :</strong> 분기별 파워거래소 랭킹 반영 */}
+                <span className="inline"><strong>추천 시스템 :</strong></span>{" "}
+                  <span className="inline whitespace-nowrap">
+                    분기별 파워거래소 랭킹 반영
+                  </span>
               </li>
               <li>
-                👩‍💻 <strong>전문 상담 :</strong> 24시간 라이브 서포트
+                {/* <strong>자동 환급 :</strong> 매일 정산되는 수수료 혜택 */}
+                <span className="inline"><strong>자동 환급 :</strong></span>{" "}
+                  <span className="inline whitespace-nowrap">
+                    매일 정산되는 수수료 혜택
+                  </span>
               </li>
               <li>
-                💸 <strong>자동 환급 :</strong> 매일 정산되는 수수료 혜택
+                {/* <strong>전문 상담 :</strong> 24시간 라이브 서포트 */}
+                <span className="inline"><strong>전문 상담 :</strong></span>{" "}
+                  <span className="inline whitespace-nowrap">
+                    24시간 라이브 서포트
+                  </span>
               </li>
+              
             </ul>
             <img
               style={{
@@ -101,33 +118,35 @@ export default function AboutCompanySection() {
             {/* 1 라인 */}
             <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-start w-full gap-0 mb-0">
             {/* 왼쪽 섹션 */}
-            <section className="flex-1 p-4 w-full sm:w-auto">
+            <section className="flex-1 p-1 justify-center w-full">
               {/* Headline */}
               <div className="flex justify-center sm:justify-center">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-full shadow-[0_4px_16px_rgba(0,0,0,0.5)] overflow-hidden">
+                  <div className="w-12 h-12 rounded-full shadow-[0_4px_16px_rgba(0,0,0,0.5)] overflow-hidden">
                     <img
                       src="/images/hed.png"
                       alt="샘플 이미지"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h2 className="text-[45px] sm:text-5xl md:text-5xl font-extrabold text-blue-800 drop-shadow-md">
+                  <h2 className="text-[40px] sm:text-5xl md:text-5xl font-extrabold text-blue-800 drop-shadow-md">
                     Hedgehood
                   </h2>
                 </div>
               </div>
 
               {/* Description */}
-              <p className="text-[22px] sm:text-xl md:text-xl text-center text-gray-800 mb-1 font-semibold leading-relaxed">
-                 <span className="block sm:inline">단 하나! </span>{" "}
-                <span className="block sm:inline whitespace-nowrap">
-                  <span className="text-blue-600 font-extrabold underline decoration-wavy underline-offset-4">
-                    셀퍼럴 수수료 환급
-                  </span>{" "}
-                  가능한 거래소
-                </span>
-              </p>
+              <div className="flex justify-center w-full">
+                <p className="text-[20px] sm:text-xl md:text-xl text-center text-gray-800 mb-1 font-semibold leading-relaxed">
+                  <span className="inline">단 하나! </span>{" "}
+                  <span className="inline whitespace-nowrap">
+                    <span className="text-blue-600 font-extrabold underline decoration-wavy underline-offset-4">
+                      셀퍼럴 수수료 환급
+                    </span>{" "}
+                    가능한 거래소
+                  </span>
+                </p>
+              </div>
             </section>
 
             {/* 오른쪽 섹션 */}
@@ -144,7 +163,7 @@ export default function AboutCompanySection() {
             <div className="flex flex-col sm:flex-row justify-between items-stretch w-full gap-0 mt-[-8px]">
               {/* 왼쪽 섹션 */}
               <section className="flex-1 p-4 ">
-                <ul className="c space-y-3 text-xl sm:text-base md:text-lg text-gray-800 font-medium py-4 rounded-2xl relative z-10">
+                <ul className="pl-3 sm:pl-6 space-y-3 text-xl sm:text-base md:text-lg text-gray-800 font-medium py-4 rounded-2xl relative z-10">
                   <li>
                     ✅ <strong>평균 스프레드 :</strong>{" "}
                     <span className="text-indigo-600 font-semibold">
@@ -184,7 +203,7 @@ export default function AboutCompanySection() {
                 whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => router.push("/exchangeInquiry")}
-                className="bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white text-[25px] sm:text-[30px] md:text-[30px] font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-2xl shadow-xl transition-all cursor-pointer"
+                className="bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white text-[20px] sm:text-[30px] md:text-[30px] font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-2xl shadow-xl transition-all cursor-pointer"
               >
                 {/* className="bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white text-base sm:text-lg md:text-xl font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-2xl shadow-xl transition-all cursor-pointer"> */}
                 지금 90% 셀퍼럴 받기
@@ -289,19 +308,19 @@ export default function AboutCompanySection() {
                     </div>
                     <ul className="text-base text-gray-700 space-y-2">
                       <li className="font-bold text-xl">
-                        📊 평균 스프레드 :{" "}
+                        평균 스프레드 :{" "}
                         <span className="text-indigo-600 font-semibold text-lg drop-shadow-sm">
                           {item.평균스프레드}
                         </span>
                       </li>
                       <li className="font-bold text-xl">
-                        📈 최대 레버리지 :{" "}
+                        최대 레버리지 :{" "}
                         <span className="text-cyan-600 font-semibold text-lg drop-shadow-sm">
                           {item.최대레버리지}
                         </span>
                       </li>
                       <li className="font-bold text-xl">
-                        💵 수수료 :{" "}
+                        수수료 :{" "}
                         <span className="text-green-600 font-bold text-lg drop-shadow-sm">
                           {item.수수료}
                         </span>

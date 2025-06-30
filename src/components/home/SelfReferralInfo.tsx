@@ -161,18 +161,18 @@ export default function SelfReferralInfo() {
             <img
               src="/images/selferral.png"
               alt="설명"
-              className="w-32 sm:w-44 md:w-52 lg:w-60 drop-shadow-lg transition-transform hover:scale-105"
+              className="w-40 sm:w-44 md:w-52 lg:w-60 drop-shadow-lg transition-transform hover:scale-105"
             />
             <div className="text-center sm:text-left flex-1">
               <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold mb-3 sm:mb-4">
                 셀퍼럴이란?
               </h2>
-              <p className="text-base sm:text-lg md:text-3xl font-extrabold leading-relaxed">
+              <p className="text-xl sm:text-lg md:text-2xl font-extrabold leading-relaxed">
                 셀퍼럴이란{" "}
                 <span className="text-[#157CFF] font-extrabold">
                   추천인 코드
                 </span>
-                를 통해 발생하는 수수료를,
+                를 통해 발생하는 수수료를{" "}
                 <br className="hidden sm:block" />
                 <span className="text-[#157CFF] font-extrabold">
                   추천인이 아닌 본인
@@ -182,7 +182,7 @@ export default function SelfReferralInfo() {
             </div>
             <button
               onClick={() => router.push("/exchangeInquiry")}
-              className="mt-5 sm:mt-0 bg-[#157CFF] text-white text-sm sm:text-lg font-bold px-5 sm:px-10 py-2 sm:py-3 rounded-xl shadow-lg hover:scale-105 transition cursor-pointer">
+              className="mt-5 sm:mt-0 bg-[#157CFF] text-white text-[20px] sm:text-[25px] font-bold px-5 sm:px-10 py-2 sm:py-3 rounded-xl shadow-lg hover:scale-105 transition cursor-pointer">
               셀퍼럴 신청
             </button>
           </div>
@@ -191,7 +191,7 @@ export default function SelfReferralInfo() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-[#eef6ff] to-white rounded-3xl shadow-xl px-4 py-8 sm:px-8 sm:py-10">
               <div className="relative mb-8">
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold">
+                <h3 className="text-[22px] sm:text-4xl font-extrabold whitespace-nowrap">
                   셀퍼럴을 선택해야 하는 이유?
                 </h3>
                 {/* <img
@@ -206,31 +206,31 @@ export default function SelfReferralInfo() {
               "
               /> */}
               </div>
-              <p className="text-xs sm:text-lg md:text-2xl font-medium leading-relaxed whitespace-pre-line">
-                <span className="block">
+              <p className="text-xl sm:text-lg md:text-2xl font-medium leading-relaxed whitespace-pre-line">
+                <span className="sm:block">
                   <span className="text-[#157CFF] font-bold">국내거래소는</span> 업체별로 수수료 및 거래 플랫폼이
                 </span>
-                <span className="block">
+                <span className="sm:block">
                   다양하기 때문에 트레이더가 조건을 비교해
                 </span>
-                <span className="block">
+                <span className="sm:block">
                   자신에게 맞는 업체를 선택합니다.
                 </span>
                 <br />
-                <span className="block">
+                <span className="sm:block">
                   <span className="text-[#157CFF] font-bold">해외거래소는</span> 동일한 거래 플랫폼 MT5를 사용함으로
                 </span>
-                <span className="block">
+                <span className="sm:block">
                   셀퍼럴로 최저수수료를 받을 수 있는 업체를 선택해야
                 </span>
-                <span className="block">
+                <span className="sm:block">
                   합니다.
                 </span>                
               </p>
               <div className="mt-10 flex justify-center">
                 <button
                   onClick={() => router.push("/exchangeInquiry")}
-                  className="mt-4 sm:mt-0 bg-[#157CFF] text-white text-sm sm:text-lg font-bold px-5 sm:px-7 py-2 sm:py-3 rounded-xl shadow-lg hover:scale-105 transition cursor-pointer">
+                  className="mt-4 sm:mt-0 bg-[#157CFF] text-white text-[20px] sm:text-[30px] font-bold px-5 sm:px-7 py-2 sm:py-3 rounded-xl shadow-lg hover:scale-105 transition cursor-pointer">
                   셀퍼럴 확인하기
                 </button>
               </div>
