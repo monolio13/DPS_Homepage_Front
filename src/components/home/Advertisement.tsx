@@ -35,7 +35,7 @@ export default function AboutCompanySection() {
 
   const { ref: gridRef, inView: gridInView } = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.2,
   });
 
   return (
@@ -110,10 +110,14 @@ export default function AboutCompanySection() {
           {/* HEDGEHOOD 카드 - 강조 */}
           <motion.div
             ref={rightRef}
-            initial={{ opacity: 0, y: 30, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
-            className={`flex-1 relative bg-gradient-to-br from-white via-blue-50 to-blue-100 border-2 border-blue-300 p-6 rounded-3xl shadow-[0_0_60px_rgba(0,100,255,0.15)] transition-all duration-700 transform`}
+            // initial={{ opacity: 0.5, y: 40 }}
+            // animate={isVisible ? { opacity: 1, y: 0 } : {}}
+            // transition={{ duration: 0.8, ease: "easeOut" }}
+            className={`flex-1 relative bg-gradient-to-br from-white via-blue-50 to-blue-100 border-2 border-blue-300 p-6 rounded-3xl shadow-[0_0_60px_rgba(0,100,255,0.15)] transition-all duration-700 transform ${
+              isVisible 
+              ? "translate-x-0 opacity-100"
+              : "translate-x-10 opacity-0"
+            }`}
           >
             {/* 1 라인 */}
             <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-start w-full gap-0 mb-0">
