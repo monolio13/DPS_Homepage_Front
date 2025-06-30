@@ -129,7 +129,7 @@ export default function AboutCompanySection() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h2 className="text-[40px] sm:text-5xl md:text-5xl font-extrabold text-blue-800 drop-shadow-md">
+                  <h2 className="text-[40px] sm:text-5xl font-extrabold text-blue-800 drop-shadow-md">
                     Hedgehood
                   </h2>
                 </div>
@@ -137,7 +137,7 @@ export default function AboutCompanySection() {
 
               {/* Description */}
               <div className="flex justify-center w-full">
-                <p className="text-[20px] sm:text-xl md:text-xl text-center text-gray-800 mb-1 font-semibold leading-relaxed">
+                <p className="text-[20px] sm:text-xl text-center text-gray-800 mb-1 font-semibold leading-relaxed">
                   <span className="inline">단 하나! </span>{" "}
                   <span className="inline whitespace-nowrap">
                     <span className="text-blue-600 font-extrabold underline decoration-wavy underline-offset-4">
