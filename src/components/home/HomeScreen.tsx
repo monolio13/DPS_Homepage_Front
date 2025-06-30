@@ -11,7 +11,15 @@ export default function HomeScreen() {
   const [contracts, setContracts] = useState("");
   const [pageReady, setPageReady] = useState(false);
   const parsed = parseFloat(contracts);
-  const refund = isNaN(parsed) ? 0 : parsed * 1350 * 3;
+  const refund = isNaN(parsed)
+      ? 0
+      : parsed < 500
+      ? parsed * 1350 * 3
+      : parsed < 1500
+      ? parsed * 1350 * 3.5
+      : parsed < 3000
+      ? parsed * 1350 * 4
+      : parsed * 1350 * 4.5;
 
   const currentMonth = new Date().getMonth() + 1;
   const lastMonth = currentMonth === 1 ? 12 : currentMonth - 1;
@@ -128,18 +136,18 @@ export default function HomeScreen() {
               <div className="bg-gradient-to-br from-[#e0ecff] to-[#f4f8ff] rounded-2xl border border-blue-200 mb-4 py-[6px] animate-fade-in">
                 <div className="flex justify-between items-center mt-1 mb-3">
                   <label
-                    style={{
-                      marginLeft: "20px",
-                    }}
+                    // style={{
+                    //   marginLeft: "20px",
+                    // }}
                     htmlFor="contracts"
-                    className="text-[15px] sm:text-[20px] font-bold text-[#157CFF]">
+                    className="ml-3 sm:ml-5 text-[15px] sm:text-[20px] font-bold text-[#157CFF]">
                     계 약 수 :
                   </label>
                   <div
                     style={{
                       marginRight: "10px",
                     }}
-                    className="relative w-29 sm:w-45">
+                    className="relative w-32 sm:w-45">
                     {contracts === "" && (
                       <motion.span
                         initial={{ opacity: 0 }}
@@ -167,16 +175,16 @@ export default function HomeScreen() {
                 </div>
                 <div className="flex justify-between items-center mb-1">
                   <label
-                    style={{
-                      marginLeft: "20px",
-                    }}
+                    // style={{
+                    //   marginLeft: "20px",
+                    // }}
                     htmlFor="contracts"
-                    className="text-[15px] sm:text-[20px] font-bold text-[#157CFF]">
+                    className="ml-3 sm:ml-5 text-[15px] sm:text-[20px] font-bold text-[#157CFF]">
                     환 급 금 :
                   </label>
                   <div
                     style={{ marginRight: "10px" }}
-                    className="relative w-29 h-8 sm:w-45 sm:h-12 flex items-center justify-end whitespace-nowrap pr-3 rounded-xl border-2 border-blue-200 bg-white overflow-hidden"
+                    className="relative w-32 h-8 sm:w-45 sm:h-12 flex items-center justify-end whitespace-nowrap pr-3 rounded-xl border-2 border-blue-200 bg-white overflow-hidden"
                   >
                     {refund > 0 ? (
                       <span
