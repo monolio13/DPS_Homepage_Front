@@ -141,7 +141,7 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
               className="flex items-center gap-2 px-4 py-2 text-sm font-medium hover:text-indigo-500 transition">
               <QuestionMarkCircleIcon className="w-5 h-5" />
-              자주 묻는 질문
+              FAQ
             </Link>
 
             {user ? (
