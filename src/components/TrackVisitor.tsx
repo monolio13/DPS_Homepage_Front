@@ -4,7 +4,7 @@
 
 import { useEffect } from "react";
 
-/*
+
 export default function TrackVisitor() {
   useEffect(() => {
     const fingerprint =
@@ -18,8 +18,9 @@ export default function TrackVisitor() {
   }, []);
 
   return null;
-}*/
+}
 
+/*
 export default function TrackVisitor() {
   useEffect(() => {
     const collectVisitorInfo = async () => {
@@ -67,3 +68,4 @@ export default function TrackVisitor() {
 
   return null;
 }
+*/

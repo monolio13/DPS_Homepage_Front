@@ -7,6 +7,7 @@ import axios from "axios";
 import Toast from "@/lib/SuccessToast";
 
 const baseURL = "https://api.metaselferral.com/api/user";
+// const baseURL = "http://localhost:4000/api/user";
 
 export default function ExchangeInquiryForm() {
   const [form, setForm] = useState({

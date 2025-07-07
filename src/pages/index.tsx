@@ -26,13 +26,13 @@ export default function HomePage() {
   //   });
   // }, []);
 
-  // useEffect(() => {
-  //   fetch("https://api.metaselferral.com/api/track-visit", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify({ pathname: window.location.pathname }),
-  //   });
-  // }, []);
+  useEffect(() => {
+    fetch("https://api.metaselferral.com/api/track-visit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ pathname: window.location.pathname }),
+    });
+  }, []);
 
   return (
     <UserLayout>
@@ -84,7 +84,7 @@ export default function HomePage() {
           content="https://www.metaselferral.com/images/homeLogo.jpg"
         />
 
-        {/*    <TrackVisitor />*/}
+           <TrackVisitor />
         <link rel="icon" href="/images/mslogo.png" />
       </Head>
       <HomeScreen />
