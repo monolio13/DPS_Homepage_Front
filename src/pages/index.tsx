@@ -84,9 +84,9 @@ export default function HomePage() {
           content="https://www.metaselferral.com/images/homeLogo.jpg"
         />
 
-           <TrackVisitor />
         <link rel="icon" href="/images/mslogo.png" />
       </Head>
+      <TrackVisitor />
       <HomeScreen />
       <Intro />
       <SelfReferralInfo />
