@@ -258,18 +258,18 @@ export default function HomeScreen() {
           onClick={(e) => {
             const isMobile = /iPhone|Android/i.test(navigator.userAgent);
             if (isMobile) {
-              window.location.href = "kakaoopen://join?l=sPiy9wEh"; // Try to open KakaoTalk app
+              window.location.href = "kakaoopen://join?l=syLCYzHh"; // Try to open KakaoTalk app
               setTimeout(() => {
                 // Fallback to open web version if app isn't opened
-                window.location.href = "https://open.kakao.com/o/sPiy9wEh";
+                window.location.href = "https://open.kakao.com/o/syLCYzHh";
               }, 1500);
             } else {
               // For desktop, just open in new tab
-              window.open("https://open.kakao.com/o/sPiy9wEh", "_blank");
+              window.open("https://open.kakao.com/o/syLCYzHh", "_blank");
             }
             e.preventDefault();
           }}
-          href="https://open.kakao.com/o/sPiy9wEh"
+          href="https://open.kakao.com/o/syLCYzHh"
           className="flex items-center gap-2 bg-[#FEE500] hover:bg-yellow-400 text-black text-sm font-bold px-4 py-2 rounded-full shadow-lg transition">
           <img
             src="/icons/kakao-talk.png"
